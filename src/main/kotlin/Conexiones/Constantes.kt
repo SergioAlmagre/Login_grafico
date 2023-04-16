@@ -1,4 +1,4 @@
-package com.example.login_grafico
+package Conexiones
 
 object Constantes {
     var servidor = "localhost"

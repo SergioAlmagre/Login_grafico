@@ -1,16 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
-
 <?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.example.login_grafico.HelloController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+<AnchorPane prefHeight="414.0" prefWidth="512.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.login_grafico.HelloController">
+   <children>
+       <Button fx:id="botonEntrar" layoutX="282.0" layoutY="264.0" onAction="#botonEntrar" prefHeight="25.0" prefWidth="149.0" text="Entrar" />
+      <TextField fx:id="nombre" layoutX="81.0" layoutY="63.0"  promptText="nombre" />
+      <TextField fx:id="apellido1" layoutX="81.0" layoutY="93.0"  promptText="Primer apellido" />
+      <TextField fx:id="display" editable="false" layoutX="82.0" layoutY="313.0"  prefHeight="42.0" prefWidth="350.0" />
+      <Text layoutX="85.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="¿Aún no te has registrado?" />
+      <TextField fx:id="apellido2" layoutX="81.0" layoutY="126.0"  promptText="Segundo apellido" />
+      <TextField fx:id="dniRegistro" layoutX="81.0" layoutY="158.0"  promptText="DNI" />
+      <TextField fx:id="telefono" layoutX="81.0" layoutY="189.0" promptText="Teléfono" />
+      <TextField fx:id="claveRegistro" layoutX="81.0" layoutY="222.0"  promptText="Clave" />
+      <Button fx:id="botonRegistrarse" layoutX="81.0" layoutY="264.0" onAction="#botonRegistrarse" prefHeight="25.0" prefWidth="149.0" text="Registrarse" />
+      <Text layoutX="317.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="¿Ya registrado?" />
+      <TextField fx:id="dniEntrar" layoutX="283.0" layoutY="189.0"  promptText="DNI" />
+      <TextField fx:id="claveEntrar" layoutX="283.0" layoutY="222.0" promptText="Clave" />
+   </children>
+</AnchorPane>
